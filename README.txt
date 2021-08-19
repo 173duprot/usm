@@ -25,10 +25,10 @@ _______________________________________________________________________________
 The basic format for a site is simply a source directory which periodically
 has a script run on it. This may sound simple, however, below, I will lay-
 -out the insanity of how powerful this is, as well as explaining how to
-impliment diffrent features.
+properly impliment diffrent features.
 
-______________________________________________________________________________
-
-[3.0] 
-
-
+<Feature>                       <Tools used>                        <Refrence>
+_______________________________________________________________________________
+Dynamic web directory list      Shell script                        [2.1]
+Feeds (atom, rss, news, posts)  Shell script, [feed generators]     [2.2]
+User sandboxes on the site      External git repos                  [2.5]
