@@ -19,7 +19,7 @@ done
 
 # Local Varables
 TEMPLATE=$(cd $1; pwd)
-SITE=$(rm -rf $2; mkdir $SITE; cd $2; pwd)
+SITE=$(rm -rf $2; mkdir $2; cd $2; pwd)
 
 # Global varables
 export BASE=$(cd $SITE; pwd)
@@ -62,7 +62,7 @@ done
 # Push the working directory live #
 ###################################
 
-cd $SITE
-git add ./
-git commit -m "auto-update"
-git push
+# cd $SITE
+# git add ./
+# git commit -m "auto-update"
+# git push

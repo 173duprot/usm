@@ -6,7 +6,6 @@ INDEX
 
 [1.0] Description
 [2.0] Breakdown
-[3.0] 
 _______________________________________________________________________________
 
 [1.0] Description
@@ -17,3 +16,9 @@ while being an extensible tool which follows the unix phliosophy.
 
 It's a basic scripting template for creating beautiful static webpages with
 dynamicly updating content using nothing but unix tools.
+
+_______________________________________________________________________________
+
+[2.0] Breakdown
+
+
