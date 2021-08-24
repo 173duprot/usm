@@ -1,25 +1,17 @@
-#/bin/sh
+#!/bin/sh
 
-git clone https://github.com/173duprot/173duprot.git
+PAGE=./index.html
 
-# ---------------------- #
-# textfiles -> htmlfiles #
-# ---------------------- #
+# Delete it and remake it
+rm $PAGE
 
-for file in $(find -L ./ -name "*.txt"); do
+####
 
-    file_html="${file%.txt}.html"
+cat $PAGE_HEADER >> $PAGE
 
-    # If header exists, add header
-    [ -e $HTML_HEAD ] && cat $HTML_HEAD >> $file_html
-
-    # Copy text over, and turn []() into html link
-    cat $file >> $file_html
-
-    # If footer exists, add footer
-    [ -e $HTML_FOOT ] && cat "$SITE/config/footer.html" >> $file_html
-
-    # Remove text file from the site dir
-    rm $file
+for author in $(ls); do
+    echo "<a href=/wiki/authors/$author>$author</a>" >> $PAGE
 done
 
+cat $PAGE_COMMENTS >> $PAGE
+cat $PAGE_FOOTER >> $PAGE
