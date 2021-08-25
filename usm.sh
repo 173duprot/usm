@@ -20,7 +20,7 @@ for SCRIPT in $(find -L $BASE -name "*.sh"); do
 done
 
 # Push the working directory live
-cd $BASE
-git add ./
-git commit -m "auto-update"
-git push
+#cd $BASE
+#git add ./
+#git commit -m "auto-update"
+#git push
