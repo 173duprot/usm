@@ -12,7 +12,7 @@ export PAGE_FOOTER="$BASE/PAGE/footer.html"
 
 export AUTHORS="BASE/wiki/authors"
 
-# Visit every git repo in the base direcotry
+# Visit every .sh file in the base direcotry
 for SCRIPT in $(find -L $BASE -name "*.sh"); do
     cd $(dirname $SCRIPT) # Cd to the script's directory for relative commands
     source "$SCRIPT"      # Run the .sh file
