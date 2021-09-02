@@ -13,18 +13,19 @@ _______________________________________________________________________________
 Contact
 _______
 
-Feel free to hit us up with anything.
+Feel free to hit us up with anything. 
 
-Email:
+email:
     highonlinux@tutanota.com
 
-Irc:
-    
+irc:
 
-Mailing List:
-    
+    ********************
+
+mailing list:
+
+    **********************
 
 " >> $PAGE
 
-cat $PAGE_COMMENTS >> $PAGE
 cat $PAGE_FOOTER >> $PAGE

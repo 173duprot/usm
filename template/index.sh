@@ -2,52 +2,34 @@
 
 PAGE=./index.html
 
-# Delete it and remake it
-rm $PAGE
-
 cat $PAGE_HEADER >> $PAGE
 
 echo "
-[0.0] Index
-___________
-
-- [1.0] About
-- [2.0] Phliosophy
-- [3.0] Community
-- [4.0] Contribute
-
-________________________________________________________________________________
-
-[1.0] About
+[<a class=t href=#1.0>1.0</a>] About
 ___________
 
 We are a ragtag group of programmers, sysadmins, engeneers, and hobos that want
 to share the things we find cool. On this site is a large swath of information
 from ASM programming, to distro reviews, to plaintext formatting guides.
 
-________________________________________________________________________________
 
-[2.0] Phliosophy
+[<a class=t href=#1.0>2.0</a>] Phliosophy
 ________________
 
 While some on this site may be strongly opinionated on certain topics, this
 site seeks to provide a platform for experenced Power-Users and Devs to share
 their ideas, guides, practices, and experences openly. 
 
-________________________________________________________________________________
 
-[3.0] Community
+[<a class=t href=#1.0>3.0</a>] Community
 ________________
 
 We believe strongly in freedom of speech, and look to provide a platform for
 open sharing and discussion of experenced technical users on everything from
 chat protocols to music-making teqnuques.
 
-Come and join us ad irc.highonlinux.com:6600
 
-________________________________________________________________________________
-
-[4.0] Contribute
+[<a class=t href=#4.0>4.0</a>] Contribute
 ________________
 
 We are community driven project, constantly looking for new contributers.
@@ -87,7 +69,7 @@ Adding an article is as simple @/<a href=/wiki/formatting-guide>formatting-guide
 | --------------                                                               |
 |                                                                              |
 |                                                                              |
-| ```What inline code looks like```                                            |
+|    \`What inline code looks like\`                                           |
 |                                                                              |
 |                                                                              |
 | Subsection 1                                                                 |
@@ -110,5 +92,4 @@ Adding an article is as simple @/<a href=/wiki/formatting-guide>formatting-guide
 +------------------------------------------------------------------------------+
 " >> $PAGE
 
-cat $PAGE_COMMENTS >> $PAGE
 cat $PAGE_FOOTER >> $PAGE
