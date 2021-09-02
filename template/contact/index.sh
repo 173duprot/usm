@@ -2,9 +2,6 @@
 
 PAGE=./index.html
 
-# Delete it and remake it
-rm $PAGE
-
 cat $PAGE_HEADER >> $PAGE
 
 echo "
