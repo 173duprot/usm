@@ -1,10 +1,10 @@
 #!/bin/sh
 
-rm -rf ./www
-cp -rf ./template ./www
+rm -rf ./power-highonlinux
+cp -rf ./template ./power-highonlinux
 
 # Set Useful Varables for scripts
-export BASE="$(pwd)/www"
+export BASE="$(pwd)/power-highonlinux"
 
 export PAGE_HEADER="$BASE/PAGE/header.html"
 export PAGE_COMMENTS="$BASE/PAGE/comments.html"
@@ -20,7 +20,7 @@ for SCRIPT in $(find -L $BASE -name "*.sh"); do
 done
 
 # Push the working directory live
-#cd $BASE
-#git add ./
-#git commit -m "auto-update"
-#git push
+cd $BASE
+git add ./
+git commit -m "auto-update"
+git push

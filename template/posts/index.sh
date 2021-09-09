@@ -11,7 +11,5 @@ ________
 " >> $PAGE
 
 for dir in $(ls ../authors/*/*.html); do
-    echo "@/<a href=/wiki/posts/${dir}>${dir%.html}</a>" >> $PAGE
+    echo "@/<a href=${dir}>${dir##*/%.html}</a>" >> $PAGE
 done
-
-cat $PAGE_FOOTER >> $PAGE
