@@ -26,7 +26,7 @@ echo "
 ___________
 " >> $PAGE
 
-authors=$(ls | sed 's/index.sh//');
+authors=$(ls | sed 's/index.sh//' | sed 's/index.html//');
 for line in $authors; do
 	echo "<a href=./${line}>${line}</a>" >> $PAGE
 done

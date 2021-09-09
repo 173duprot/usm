@@ -39,7 +39,7 @@ blurb/application to [highonlinux@tutanota.com](highonlinux@tutanota.com).
 Once accepted, simply host a git repo with your [name|username] and mail
 us the link in the email chail.
 
-Adding an article is as simple @/<a href=/wiki/formatting-guide>formatting-guide</a>
+Adding an article is simple
 
 +------------------------------------------------------------------------------+
 | <git repo>/<article-name>.txt                                                |

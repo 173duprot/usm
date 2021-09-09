@@ -10,7 +10,7 @@ export PAGE_HEADER="$BASE/PAGE/header.html"
 export PAGE_COMMENTS="$BASE/PAGE/comments.html"
 export PAGE_FOOTER="$BASE/PAGE/footer.html"
 
-export AUTHORS="BASE/wiki/authors"
+export sup="$BASE/PAGE/sup.sh" # Luke Smith's rss generator script
 
 # Visit every .sh file in the base direcotry
 for SCRIPT in $(find -L $BASE -name "*.sh"); do
@@ -23,7 +23,4 @@ done
 cd $BASE
 git add ./
 git commit -m "auto-update"
-git pull
 git push
-
-#rm -rf $BASE

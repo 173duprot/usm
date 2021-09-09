@@ -11,5 +11,6 @@ ________
 " >> $PAGE
 
 for dir in $(ls ../authors/*/*.html); do
-    echo "@/<a href=${dir}>${dir##*/%.html}</a>" >> $PAGE
+    
+    echo "@/<a href=${dir}>${dir##*/}</a>" >> $PAGE
 done
