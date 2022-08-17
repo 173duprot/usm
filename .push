@@ -1,5 +1,3 @@
-#!/bin/sh
-
 # Push the working directory live
 cd $BASE
 git add ./
