@@ -1,4 +1,6 @@
+
 # Push the working directory live
+
 cd $BASE
 git add ./
 git commit -m "auto-update"

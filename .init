@@ -1,4 +1,6 @@
+
 # Set Useful Varables for scripts
+
 export BASE="$(pwd)/power-highonlinux"
 export PAGE_HEADER="$BASE/PAGE/header.html"
 export PAGE_COMMENTS="$BASE/PAGE/comments.html"
