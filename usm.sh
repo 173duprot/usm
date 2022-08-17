@@ -1,16 +1,7 @@
 #!/bin/sh
 
-rm -rf ./power-highonlinux
-cp -rf ./template ./power-highonlinux
-
-# Set Useful Varables for scripts
-export BASE="$(pwd)/power-highonlinux"
-
-export PAGE_HEADER="$BASE/PAGE/header.html"
-export PAGE_COMMENTS="$BASE/PAGE/comments.html"
-export PAGE_FOOTER="$BASE/PAGE/footer.html"
-
-export sup="$BASE/PAGE/sup.sh" # Luke Smith's rss generator script
+# Setup Base STATE
+. .global
 
 # Visit every .sh file in the base direcotry
 for SCRIPT in $(find -L $BASE -name "*.sh"); do
