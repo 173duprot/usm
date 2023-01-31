@@ -1,8 +1,8 @@
 
 # Visit every .sh file in the base direcotry
 
-for SCRIPT in $(find -L $BASE -name "*.sh"); do
+for SCRIPT in $(find -L $BASE -type f -regex "\./[^.]*$"); do
     cd $(dirname $SCRIPT) # Cd to the script's directory for relative commands
-    source "$SCRIPT"      # Run the .sh file
-    rm $SCRIPT            # Remove index.sh from the site dir
+    source "$SCRIPT" >    # Run the file
+    rm $SCRIPT            # Remove script from the site dir
 done
