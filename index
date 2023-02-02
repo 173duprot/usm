@@ -1,0 +1,39 @@
+#!/bin/sh
+
+echo "Generating /index.html"
+
+PAGE=index.html
+
+{
+
+cat $HEAD
+
+echo '
+[<a class=t href=#1.0>1.0</a>] Intro
+________________
+
+This is my self-hosting site. I use it to publish my code, thoughts, ideas,
+as well as run my <a href="https://yggmail.forth.ml">email</a>, <a href="https://snac.forth.ml">fediverse instance</a>, <a href="https://xmpp.forth.ml">xmpp</a>, as well as other various
+services I use on a daily basis.
+
+I run the site using a <a href=https://github.com/173duprot/usm>custom static website generator I wrote in shell</a>,
+that I mange through git and automate deployment through server-side hooks.
+
+
+[<a class=t href=#2.0>2.0</a>] Phliosophy
+________________
+
+Engineering is an artform.
+
+Hackers. Demoscene. Tinycode. Unix. Forth.
+
+Smart applications of simple logic...
+Completely understandable with no hidden magic...
+A completely transparent abstraction stack...
+
+This is what makes a design beautifual, simple, and elegant.
+'
+
+cat $FOOT 
+
+} > $PAGE
