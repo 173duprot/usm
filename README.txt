@@ -16,37 +16,10 @@ All it does is set some varables, and then runs
 all scripts in the directory tree, its incredibly
 simple.
 
-Dependancies
-	
-	ssh server	(I use dropbear)
-	httpd server	(I use darkhttpd)
-	
-
-Install
-
-	# Install on your server
-	git --bare https://github.com/173duprot/usm www.git
-	
-	# Add post-push hooks
-	vi ./www.git/hooks/post-receive
-	______________________________________________
-	 
-	   #!/bin/sh
-	 
-	   TARGET=/location/of/your/www
-	 
-	   git --work-tree="${TARGET}" checkout -qf
-	 
-	   cd $TARGET
-	   ./ubs
-	______________________________________________
-
-	
 Usage
 	
-	# Clone onto your local machene
-	git clone user@example.com:~/location/of/www.git
+	There's 2 ways that USM is used:
 	
-	# Use it like a normal git repo
-	git add ./; git commit; git push
-
+	1. Manually: 		local-setup.txt
+	2. Server-side script:	remote-setup.txt
+		
