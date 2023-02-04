@@ -1,9 +1,0 @@
-#!/bin/sh
-
-# Set Useful Varables for scripts
-
-cp template www
-export BASE="$(pwd)/www"
-export HEADER="$BASE/header.html"
-export COMMENTS="$BASE/comments.html"
-export FOOTER="$BASE/footer.html"
