@@ -18,7 +18,7 @@ simple.
 
 Usage
 	
-	There's 2 ways that USM is used:
+	There's 2 ways that usm is used:
 	
 	1. Manually: 		local-setup.txt
 	2. Server-side script:	remote-setup.txt
